@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: "Outfit", sans-serif;
+  background: #000000;
+  scroll-behavior: smooth;
+  /* overflow-x: hidden; */
+}
+
+@media (max-width: 380px){
+  #project-desc{
+    margin: 10px;
+    padding: 10px;
+  }
+  #project-desc h3{
+    font-size: 28px;
+  }
+  #project-desc p{
+    font-size: px;
+  }
+}
