@@ -1,13 +1,13 @@
 import React from 'react'
-import project1 from "../assets/project1.webp";
-import project2 from "../assets/project2.webp";
-import project3 from "../assets/project3.webp";
-import project4 from "../assets/project4.webp";
-import project5 from "../assets/project5.webp";
-import project6 from "../assets/project6.webp";
-import project7 from "../assets/project7.webp";
-import project8 from "../assets/project8.webp";
-import project9 from "../assets/project9.webp";
+import project1 from "../assets/project1.png";
+import project2 from "../assets/project2.png";
+import project3 from "../assets/project3.png";
+import project4 from "../assets/project4.png";
+import project5 from "../assets/project5.png";
+import project6 from "../assets/project6.png";
+import project7 from "../assets/project7.png";
+import project8 from "../assets/project8.png";
+import project9 from "../assets/project9.png";
 import { motion } from 'framer-motion';
 
 const Projects = () => {
@@ -15,72 +15,57 @@ const Projects = () => {
     const PROJECTS = [
         {
           id: 1,
-          title: "E-commerce Website",
-          description:
-            "A full-featured e-commerce website built with React and Node.js.",
+          title: "Quakely Ltd",
           imgSrc: project1,
-          link: "https://example.com/ecommerce-website",
+          link: "https://quakely.co.uk/",
         },
         {
           id: 2,
-          title: "Social Media App",
-          description:
-            "A social media application with real-time chat and notifications.",
+          title: "PayWave",
           imgSrc: project2,
-          link: "https://example.com/social-media-app",
+          link: "https://pay-wave-ten.vercel.app/",
         },
         {
           id: 3,
-          title: "Portfolio Website",
-          description:
-            "A personal portfolio website to showcase projects and skills.",
+          title: "Numbers Memory Game",
           imgSrc: project3,
-          link: "https://example.com/portfolio-website",
+          link: "https://numbers-memory-game-kohl.vercel.app/",
         },
         {
           id: 4,
-          title: "Blog Platform",
-          description:
-            "A blogging platform with user authentication and content management.",
+          title: "Syticks Inc",
           imgSrc: project4,
-          link: "https://example.com/blog-platform",
+          link: "https://syticks.com/",
         },
         {
           id: 5,
-          title: "Task Management Tool",
-          description: "A task management tool to organize and prioritize work.",
+          title: "15 Puzzle",
           imgSrc: project5,
-          link: "https://example.com/task-management-tool",
+          link: "https://15-puzzle-seven.vercel.app/",
         },
         {
           id: 6,
-          title: "Online Learning Platform",
-          description:
-            "An online learning platform offering various courses and resources.",
+          title: "Kliq Inc",
           imgSrc: project6,
-          link: "https://example.com/online-learning-platform",
+          link: "https://kliq-lac.vercel.app/",
         },
         {
           id: 7,
-          title: "Fitness Tracker",
-          description: "A mobile application to track fitness activities and goals.",
+          title: "Cryptoplace",
           imgSrc: project7,
-          link: "https://example.com/fitness-tracker",
+          link: "https://cryptoplace-one-nu.vercel.app/",
         },
         {
           id: 8,
-          title: "Recipe App",
-          description: "An app for browsing and saving various cooking recipes.",
+          title: "Weather Dashboard",
           imgSrc: project8,
-          link: "https://example.com/recipe-app",
+          link: "https://weather-app-pi-pink-28.vercel.app/",
         },
         {
           id: 9,
-          title: "Weather Dashboard",
-          description:
-            "A weather dashboard providing current weather data and forecasts.",
+          title: "To Do App",
           imgSrc: project9,
-          link: "https://example.com/weather-dashboard",
+          link: "https://godswill-ic.github.io/To-do_Web_App/",
         },
       ];
 
@@ -99,9 +84,8 @@ const Projects = () => {
                     transition={{ type: 'spring', stiffness: 300, damping: 30 }}  // Smooth spring-like transition
                     viewport={{ once: false, amount: 0.2 }}>
                         <img src={project.imgSrc} alt={project.title} className='h-auto w-full object-cover' />
-                        <div className='absolute bottom-0 left-0 right-0 m-5 p-5 text-white backdrop-blur-md bg-transparent' id='project-desc'>
-                            <h3 className='text-3xl bg-transparent'>{project.title}</h3>
-                            <p className='max-w-xs text-lg bg-transparent'>{project.description}</p>
+                        <div className='absolute bottom-0 left-0 right-0 m-5 p-2 text-lime-300 backdrop-blur-md bg-transparent w-[250px] ml-auto mr-auto' id='project-desc'>
+                            <p className='text-xl bg-transparent text-center'>{project.title}</p>
                         </div>
                     </motion.div>
                 </a>

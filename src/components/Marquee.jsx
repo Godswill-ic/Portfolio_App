@@ -14,7 +14,7 @@ const Marquee = () => {
         "Node, ",
         "Cypress, ",
         "RESTful APIs, ",
-        "Redis, "
+        "Typescript, "
     ];
 
   return (

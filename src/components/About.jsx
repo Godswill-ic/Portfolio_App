@@ -5,7 +5,18 @@ const About = () => {
     <section id='about'>
         <h2 className='my-10 text-center text-4xl lg:text-7xl'>About Me</h2>
         <div className='flex items-center justify-center text-center'>
-            <p className='mx-8 lg:my-4 max-w-6xl text-[20px] text-gray-400 lg:text-3xl'>As a dedicated Full Stack Developer, I specialize in creating dynamic and responsive web applications that provide seamless user experiences. With a strong foundation in both front-end and back-end technologies, I excel in building robust and scalable solutions. My expertise includes working with JavaScript frameworks such as React and Node.js, as well as proficiency in databases like MongoDB and SQL. I am passionate about continuous learning and keeping up-to-date with the latest industry trends, which allows me to implement modern practices and tools in my projects.</p>
+            <p className='mx-8 lg:my-4 max-w-6xl text-[20px] text-gray-400 lg:text-2xl'>
+              I’m a Front-End Developer passionate about creating clean, responsive, and user-friendly web applications. 
+              My core expertise lies in React and Next.js, where I leverage TypeScript for reliability and Tailwind CSS 
+              for building elegant, modern interfaces with speed and precision. I have a strong foundation in JavaScript, 
+              UI/UX best practices, and performance optimization, enabling me to deliver scalable solutions that look great 
+              and perform seamlessly.  
+
+              I’m experienced with Git and GitHub for version control, integrating RESTful and GraphQL APIs, and deploying 
+              production-ready applications. Always curious and eager to learn, 
+              I enjoy exploring new technologies, improving my workflow, and bringing creativity and detail into every project.
+            </p>
+
         </div>
     </section>
   )

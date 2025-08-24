@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { LuImport } from 'react-icons/lu';
-import profileImage from '../assets/benson.webp'
+import profileImage from '../assets/me1.jpg'
 
 const Hero = () => {
 
@@ -31,7 +31,7 @@ const Hero = () => {
   return (
     <div className='flex flex-col items-center justify-center'>
         <div className='mt-16 overflow-hidden'>
-            <motion.h1 className='text-[12vw] font-semibold  leading-none overflow-hidden lg:text-[9vw]' ref={ref} initial="hidden" animate={isInView ? "visible" : "hidden"}>
+            <motion.h1 className='text-[10vw] font-semibold  leading-none overflow-hidden lg:text-[7vw]' ref={ref} initial="hidden" animate={isInView ? "visible" : "hidden"}>
                 {firstName.split("").map((letter, index) => (
                 <motion.span 
                     key={`first-${index}`}
@@ -59,7 +59,7 @@ const Hero = () => {
         </div>
 
         <div className='mt-8'>
-            <a href="/Chukwueke-Godswill.pdf"
+            <a href="/Godswill_Chukwueke_CV.docx"
                 target='_blank'
                 rel='noopener noreferrer'
                 download
@@ -70,9 +70,16 @@ const Hero = () => {
             </a>
         </div>
 
-        <div className='w-full'>
-            <img src={profileImage} alt="Godswill Chukwueke" className='mt-8 h-96 w-full object-cover' />
-        </div>
+        <div className="relative w-full">
+  <img
+    src={profileImage}
+    alt="Godswill Chukwueke"
+    className="mt-8 h-96 w-full object-cover"
+  />
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black bg-opacity-40 mt-8 h-96"></div>
+</div>
+
     </div>
   )
 }

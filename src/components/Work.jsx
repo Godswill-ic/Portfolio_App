@@ -4,21 +4,28 @@ import { motion } from 'framer-motion';
 const Work = () => {
 
     const EXPERIENCES = [
-        {
-          company: "Google",
-          role: "Software Engineer",
-          year: "12/2023 - Present",
-          description:
-            "Developing and maintaining scalable web applications using modern technologies. Collaborating with cross-functional teams to design and implement new features. Enhancing application performance and ensuring high-quality code through rigorous testing and code reviews. Contributing to the continuous improvement of development processes and best practices.",
-        },
-        {
-          company: "Facebook",
-          role: "Frontend Developer",
-          year: "01/2021 - 11/2023",
-          description:
-            "Implemented user interfaces for web applications using React and Redux. Worked closely with designers to ensure seamless user experiences. Optimized components for maximum performance across a vast array of web-capable devices and browsers. Participated in code reviews and provided feedback to maintain high code quality.",
-        },
-      ];
+      {
+        company: "Quakely Ltd",
+        role: "Website Developer",
+        year: "06/2025 - Present",
+        description:
+          "Leading the development of the company’s website using React, Next.js, TypeScript, and Tailwind CSS. Implementing responsive, modern UI components and optimizing performance for a global audience. Collaborating with stakeholders to ensure the site reflects the company’s brand identity and scales effectively. Deploying and managing production environments on Hostinger for seamless delivery.",
+      },
+      {
+        company: "Syticks Inc",
+        role: "Frontend Developer",
+        year: "10/2024 - Present",
+        description:
+          "Building and maintaining dynamic front-end applications with React and TypeScript. Integrating APIs to deliver real-time data-driven features. Working closely with designers to translate wireframes into clean, user-friendly interfaces. Managing version control with Git/GitHub and deploying applications on Hostinger.",
+      },
+      {
+        company: "Daffodil Care",
+        role: "Website Developer",
+        year: "02/2022 - 04/2022",
+        description:
+          "Designed and developed the company’s website, focusing on usability and responsive layouts. Delivered a modern interface using HTML, CSS, and JavaScript while ensuring cross-browser compatibility. Worked with the team to align technical solutions with business goals and provided support for content updates and improvements.",
+      },
+    ];
 
 
   return (
